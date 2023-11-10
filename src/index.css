@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.main {
+  @apply flex justify-center items-center w-full h-screen md:h-auto md:py-6 sm:h-auto sm:p-6 bg-gray-400;
+}
+.main-container {
+  @apply bg-white px-24 sm:px-14 py-10 rounded-2xl w-[65%] md:w-[90%] sm:w-[90%];
+}
+.g-inp-gap {
+  @apply grid grid-cols-2 mb-4 md:grid-cols-1 sm:grid-cols-1 gap-10;
+}
+.f-gap {
+  @apply flex flex-col gap-4 pb-3;
+}
+.inputs {
+  @apply outline-none font-sans text-lg placeholder:text-gray-800;
+}
+.gray-font {
+  @apply text-gray-500 font-sans;
+}
+.btn {
+  @apply bg-red-500 px-10 py-2 rounded-full text-white my-6 font-medium shaddow hover:bg-gray-500;
+}
+.shaddow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
